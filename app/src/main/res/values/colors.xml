@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="odvoji">#222224</color>
+    <color name="dugme">#80bfff</color>
+    <color name="pozadina">#b3d9ff</color>
+    <color name="pozadina2">#e6ffff</color>
+</resources>

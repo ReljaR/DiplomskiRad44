@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hemera">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/hemera"/>
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:background="#ccffff"
+        android:id="@+id/relativeHemera"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp">
+        <TextView
+            android:id="@+id/tekstHemera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:text="@string/hemera2"
+            android:textSize="25sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hemera"
+            android:textSize="18sp"
+            android:layout_below="@+id/tekstHemera"
+            android:lineSpacingExtra="5sp"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/relativeHemera">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Broj slobodnih mjesta: "
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="7dp"
+            android:drawableLeft="@drawable/sto"
+            android:drawablePadding="5dp"
+            android:id="@+id/slobodnaMjesta"
+            android:textSize="19sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/slobodnaMjestaBroj"
+            android:layout_marginTop="-5dp"
+            android:textSize="26sp"
+            android:text="12"
+            android:background="@null"
+            android:layout_toRightOf="@+id/slobodnaMjesta"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adresa:"
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="13dp"
+            android:layout_below="@+id/slobodnaMjesta"
+            android:drawableLeft="@drawable/adresa"
+            android:drawablePadding="5dp"
+            android:id="@+id/adresaHemera"
+            android:textSize="19sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/adresaHemera1"
+            android:textSize="19sp"
+            android:layout_marginTop="16dp"
+            android:text="@string/adresaHemera"
+            android:background="@null"
+            android:layout_toRightOf="@+id/adresaHemera"
+            android:layout_below="@+id/slobodnaMjestaBroj"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Broj telefona:"
+            android:layout_marginLeft="60dp"
+            android:layout_below="@+id/adresaHemera1"
+            android:drawableLeft="@drawable/telefon"
+            android:layout_marginTop="16dp"
+            android:drawablePadding="5dp"
+            android:id="@+id/brojTelefona"
+            android:textSize="19sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/brojTelefona1"
+            android:textSize="19sp"
+            android:layout_marginTop="16dp"
+            android:text="020 221 650"
+            android:background="@null"
+            android:layout_toRightOf="@+id/brojTelefona"
+            android:layout_below="@+id/adresaHemera1"
+            />
+
+
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/primaoc"
+            android:layout_below="@+id/brojTelefona1"
+            android:hint="To"
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionNext"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:hint="Message"
+            android:gravity="start"
+            android:id="@+id/sadrzaj"
+            android:layout_below="@+id/primaoc"
+            android:imeOptions="actionDone" />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"
+            android:hint="Message"
+            android:gravity="start"
+            android:id="@+id/naslov"
+            android:layout_below="@+id/sadrzaj"
+            android:imeOptions="actionDone" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    tools:context = ".profil"
+    android:orientation = "vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@color/pozadina"
+        android:id="@+id/rltv">
+        <ImageView
+            android:id="@+id/slikaProfil"
+            android:layout_width="130dp"
+            android:layout_height="160dp"
+            android:src="@drawable/profilna"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:id="@+id/textProfil1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/userProfil"
+            android:layout_below="@+id/slikaProfil"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/rltv">
+
+        <TextView
+            android:id="@+id/imeProfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account info"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ime i prezime"
+            android:layout_marginLeft="70dp"
+            android:layout_marginBottom="7dp"
+            android:drawableLeft="@drawable/profil"
+            android:drawablePadding="5dp"
+            android:id="@+id/imeProfil1"
+            android:textSize="16sp"
+            android:layout_below="@+id/imeProfil"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Upisite ime i prezime"
+            android:layout_marginTop="-5dp"
+            android:layout_marginLeft="70dp"
+            android:id="@+id/imeProfil2"
+            android:textSize="16sp"
+            android:background="@null"
+            android:layout_below="@+id/imeProfil1"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telefon"
+            android:layout_marginLeft="70dp"
+            android:layout_marginBottom="7dp"
+            android:drawableLeft="@drawable/telefon"
+            android:drawablePadding="5dp"
+            android:id="@+id/telefonProfil1"
+            android:textSize="16sp"
+            android:layout_below="@+id/imeProfil2"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Upisite broj telefona"
+            android:layout_marginTop="-5dp"
+            android:layout_marginLeft="70dp"
+            android:id="@+id/telefonProfil2"
+            android:textSize="16sp"
+            android:background="@null"
+            android:layout_below="@+id/telefonProfil1"
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-mail"
+            android:layout_marginLeft="70dp"
+            android:layout_marginBottom="7dp"
+            android:drawableLeft="@drawable/mail"
+            android:drawablePadding="5dp"
+            android:id="@+id/mailProfil1"
+            android:textSize="16sp"
+            android:layout_below="@+id/telefonProfil2"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Upisite e-mail"
+            android:layout_marginTop="-5dp"
+            android:layout_marginLeft="70dp"
+            android:id="@+id/mailProfil2"
+            android:textSize="16sp"
+            android:background="@null"
+            android:layout_below="@+id/mailProfil1"
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adresa"
+            android:layout_marginLeft="70dp"
+            android:layout_marginBottom="7dp"
+            android:drawableLeft="@drawable/adresa"
+            android:drawablePadding="5dp"
+            android:id="@+id/adresaProfil1"
+            android:textSize="16sp"
+            android:layout_below="@+id/mailProfil2"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Upisite adresu"
+            android:layout_marginTop="-5dp"
+            android:layout_marginLeft="70dp"
+            android:id="@+id/adresaProfil2"
+            android:textSize="16sp"
+            android:background="@null"
+            android:layout_below="@+id/adresaProfil1"
+            />
+
+        <Button
+            android:id="@+id/prihvati"
+            android:layout_width="30dp"
+            android:layout_height="52dp"
+            android:layout_below="@+id/adresaProfil2"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit"
+            android:onClick="zamijeni"/>
+    </RelativeLayout>
+</RelativeLayout>

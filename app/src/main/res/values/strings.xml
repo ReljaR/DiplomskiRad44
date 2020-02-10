@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">DiplomskiRad</string>
+    <string name="search">Search</string>
+    <string name="dugme">Search</string>
+    <string name="home">Home</string>
+    <string name="profile">Profil</string>
+    <string name="mapa">Mapa</string>
+    <string name="dugmeLogin">Login</string>
+    <string name="login">Login</string>
+    <string name="hintUser">Username</string>
+    <string name="hintPassword">Password</string>
+    <string name="submit">Submit</string>
+    <string name="userProfil">\@reljarastoder</string>
+    <string name="hemera">\t \t Surrounded by bars and restaurants in Downtown, this polished hotel is 2 km \n from Podgorica train station, and an 8-minute walk from both the Ribnica Fortress and the Millennium Bridge.
+    </string>
+    <string name="hemera2">Hemera</string>
+    <string name="adresaHemera">17 Njegoševa, Podgorica</string>
+</resources>

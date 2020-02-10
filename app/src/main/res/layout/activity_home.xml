@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/glavnaStranica1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/logoSlika"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/logo2"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/glavnaStranica2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginStart="30dp">
+
+            <EditText
+                android:id="@+id/search"
+                android:layout_width="250dp"
+                android:layout_height="38dp"
+                android:hint="@string/search"
+                android:background="@drawable/ivica"
+                android:drawableLeft="@drawable/search"
+                android:drawablePadding="10dp"
+                android:inputType="text"
+                />
+            <Button
+                android:id="@+id/dugme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dugme"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/dugmeLogin"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:text="@string/dugmeLogin"
+            android:layout_gravity="end"
+            android:layout_marginRight="10dp"
+            android:onClick="loginLogin"
+            style="?android:attr/borderlessButtonStyle"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
